@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+<title>This is my first webpage.</title>
+</head>
+<body>
+<p lang="en-us">Paragraph in English.</p>
+<p>This is a normal paragraph.</p>
+<h1>This is an h1 heading.</h1>
+<h2>This is an h2 heading.</h2>
+<h3>This is an h3 heading.</h3>
+<h4>This is an h4 heading.</h4>
+<h5>This is an h5 heading.</h5>
+<h6>This is an h6 heading.</h6>
+<p>These should all look the same due to 'white space collapsing.'</p>
+<p>These should all look the same due to '
+          white space collapsing.'</p>
+<p>These should all look the same due to 'white space 
+
+
+
+collapsing.'</p>
+<p>The <b>bold</b> tag is how you make someething bold.</p>
+<p>The <i>italic</i> tag is how you make something italicized.</p>
+<p>The sup tag is how you make E=mc<sup>2</sup>.</p>
+<p>The sub tag is how you annotate text<sub>1</sub>.</p>
+<p>You add a new line with a break tag so that <br />this will appear on a new line.</p>
+<p>You add an hr tag so that <hr />this gets separated with a nice line graphic.</p>
+<p>Neither the br or hr tags have opening tags. They're called 'empty elements' since they contain no content.</p>
+<p>You can display a tags as text (&ltp&gt) by using the ASCII equivalents.</p>
+<hr />
+<table>
+  <tr>
+    <td></td>
+    <th scope="col">Col Heading</th>
+    <th scope="col">Col Heading</th>
+  </tr>
+  <tr>
+    <th scope="row">Row Heading</th>
+    <td>Some data</td>
+    <td>More data</td>
+  </tr>
+  <tr>
+    <th scope="row">Row Heading</th>
+    <td>New Row New Data</td>
+    <td>Even more in Row</td>
+  </tr>
+</table>
+<hr />
+<table>
+  <tr>
+    <td></td>
+    <th scope="col">Col Heading</th>
+    <th scope="col">Col Heading</th>
+  </tr>
+  <tr>
+    <th scope="row">Row Heading</th>
+    <td colspan="2">This wide data cell stretches across two cols.</td>
+  </tr>
+  <tr>
+    <th scope="row">Row Heading</th>
+    <td rowspan="2">This cell takes two rows.</td>
+  </tr>
+  <tr>
+    <th scope="row">Row Heading</th>
+    <td>Table Data</td>
+    <td>Table Data</td>
+  </tr>
+</table>
+<hr />
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Income</th>
+      <th>Expenditure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1st January</th>
+      <td>250</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>2nd January</th>
+      <td>285</td>
+      <td>48</td>
+    </tr>
+    <!-- additional rows as above -->
+    <tr>
+      <th>31st January</th>
+      <td>129</td>
+      <td>64</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td>7824</td>
+      <td>1241</td>
+    </tr>
+  </tfoot>
+</table>
+<hr />
+<form>
+  <p>This is a text box with required entry.</p>
+    <input type="text" name="name" required="required" />
+  <p>This is a password box with 4 characters max.</p>
+    <input type="password" name="password" maxlength="4" />
+  <p>This is a text area.</p>
+    <textarea>This is the default text...</textarea>
+  <p>These are radio buttons to select a fave food.</br>
+    <input type="radio" name="food" value="sandwiches" checked="checked" /> Sandwiches
+    <input type="radio" name="food" value="tex-mex" /> Tex-Mex
+    <input type="radio" name="food" value="italian" /> Italian
+  </p>
+  <p>Subjects Interested In:</br>
+    <input type="checkbox" name="subject" value="math"/> Math
+    <input type="checkbox" name="subject" value="science"/> Science
+    <input type="checkbox" name="subject" value="history" checked="checked"/> History
+  </p>
+  <p>Which country are you in?</br>
+    <select name="country">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="mexico" selected="selected">Mexico</option>
+    </select>
+  </p>
+  <p>Here's a drop-down with multi-entries shown at once.</br>
+    <select name="country" size="2">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="mexico" selected="selected">Mexico</option>
+    </select>
+  </p>
+  <p>Here's a drop-down with multi-selections allowed.</br>
+    <select name="country" multiple="multiple">
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="mexico">Mexico</option>
+    </select>
+  </p>
+  <form action="http://www.example.com/upload.php" method="post">
+    <p>Upload your song in MP3 format:</p>
+    <input type="file" name="user-song" /><br /> <input type="submit" value="Upload" />
+  </form>
+  <form> <p>Subscribe to our email list:</p>
+    <input type="text" name="email" />
+    <input type="submit" name="subscribe"
+      value="Subscribe" />
+  </form>
+  </form>
+  <form> <p>Subscribe to our email list:</p>
+    <input type="text" name="email" />
+    <input type="image" src="submit.jpg" width="100" height="20" />
+  </form>
+  <form>
+    <button name="button" value="ADD" />
+  </form>
+  <form>
+    <button>
+      <img src="button_test.jpeg" height="40" width="60" />Add
+    </button>
+  </form>
+  <div>
+    <iframe
+      src="http://maps.google.co.uk/maps?q=moma+new+york
+      &amp;output=embed"
+      width="450"
+      height="350"
+      frameborder="0"
+      seamless="seamless">
+    </iframe>
+  </div>
+  <div>
+    <video src="SignUp_NotRecognizingFBEmail.mp4" width="500" height="500" autoplay loop controls>
+      <p>Bug Report Video</p>
+    </video>
+  </div>
+</body>
+</html>
